@@ -2,11 +2,12 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  min-height: 100%;
+  height: 100vh;
 }
 
 .container__main {
-  min-height: 100%;
-  height: 100vh;
+  flex-grow: 1;
   position: relative;
 }
 
