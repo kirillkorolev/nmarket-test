@@ -1,0 +1,126 @@
+.price__choose {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $yellow;
+  color: $black;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 6px;
+  transition: background-color 0.4s ease-out 0.1s;
+  max-width: 268px;
+  width: 100%;
+  font-feature-settings: "liga" 0;
+
+  &:hover,
+  &:focus {
+    background-color: $dark-yellow;
+  }
+
+  &:focus {
+    background-color: $very-dark-yellow;
+  }
+}
+
+.price__key-icon {
+  flex-shrink: 0;
+  margin-right: 8px;
+}
+
+.price__date {
+  color: $blue;
+  font-feature-settings: "liga" 0;
+}
+
+.price__expensive {
+  color: $red;
+  font-feature-settings: "liga" 0;
+}
+
+.price__value {
+  font-size: 24px;
+  line-height: 36px;
+  color: $black;
+  font-weight: 700;
+  margin-bottom: 13px;
+  font-feature-settings: "liga" 0;
+}
+
+.price {
+  border-left: 1px solid $pale-charcoal;
+  padding-left: 31px;
+  width: 300px;
+}
+
+.price__comparison {
+  margin-bottom: 24px;
+  padding-right: 70px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.price__duration {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media (max-width: 1279px) {
+  .price {
+    flex-shrink: 0;
+  }
+
+  .price__comparison {
+    padding-right: 0;
+    width: 90%;
+    margin-bottom: 111px;
+  }
+}
+
+@media (max-width: 919px) {
+  .price {
+    border-left: 0;
+    padding-left: 0;
+    border-top: 1px solid $pale-charcoal;
+    padding-top: 23px;
+    width: 100%;
+    margin-left: 8px;
+  }
+
+  .price__duration {
+    margin-bottom: 3px;
+  }
+
+  .price__value {
+    margin-bottom: 12px;
+  }
+
+  .price__comparison {
+    width: 37%;
+    line-height: 22px;
+    margin-bottom: 23px;
+  }
+
+  .price__choose {
+    max-width: 652px;
+  }
+}
+
+@media (max-width: 767px) {
+  .price__comparison {
+    width: 88%;
+    margin-bottom: 14px;
+  }
+
+  .price {
+    margin-left: 0;
+    padding-top: 18px;
+  }
+
+  .price__value {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/roboto-bold.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/roboto-bold.woff" as="font" crossorigin="">
+  <link rel="preload" href="fonts/roboto-medium.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/roboto-medium.woff" as="font" crossorigin="">
+  <link rel="preload" href="fonts/roboto-regular.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/roboto-regular.woff" as="font" crossorigin="">
+  <link rel="shortcut icon" type="image/ico" sizes="16x16" href="favicon.ico">
+  <title>НМАРКЕТ - тестоввое задание</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="./js/plugins/picturefill.min.js" async=""></script>
+</head>
+<body class="container">
+  <div style="display: none">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-check" viewBox="0 0 16 16">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.9993 4.02216C14.3895 4.41273 14.3894 5.04567 13.999 5.43608L7.4682 11.9669C7.08962 12.3454 6.48003 12.3587 6.08537 11.9969L2.82589 9.00904C2.40533 8.62353 2.39201 7.96484 2.79665 7.56264C3.17554 7.18604 3.78354 7.17375 4.17734 7.53474L6.37812 9.55211C6.57545 9.733 6.88024 9.72638 7.06953 9.53709L12.5848 4.02187C12.9754 3.63123 13.6088 3.63136 13.9993 4.02216Z" fill="currentColor"></path>
+</symbol><symbol id="icon-cross" viewBox="0 0 16 16">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.5355 3.05028C11.9261 2.65975 12.5592 2.65975 12.9497 3.05028C13.3403 3.4408 13.3403 4.07397 12.9497 4.46449L9.41421 8.00003L12.9497 11.5356C13.3403 11.9261 13.3403 12.5592 12.9497 12.9498C12.5592 13.3403 11.9261 13.3403 11.5355 12.9498L8 9.41424L4.46446 12.9498C4.07394 13.3403 3.44077 13.3403 3.05025 12.9498C2.65972 12.5592 2.65972 11.9261 3.05025 11.5356L6.58578 8.00003L3.05025 4.46449C2.65972 4.07397 2.65972 3.4408 3.05025 3.05028C3.44077 2.65975 4.07394 2.65975 4.46446 3.05028L8 6.58581L11.5355 3.05028Z" fill="currentColor"></path>
+</symbol><symbol id="icon-key" viewBox="0 0 16 16">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.68294 7.5634C9.88707 7.08313 10 6.55475 10 6C10 3.79086 8.20914 2 6 2C3.79086 2 2 3.79086 2 6C2 8.20914 3.79086 10 6 10C6.55379 10 7.0813 9.88746 7.5609 9.684L8.68825 10.8113C8.74736 10.8705 8.83209 10.8961 8.91406 10.8797L10.1826 10.626C10.3576 10.591 10.5119 10.7454 10.4768 10.9204L10.2698 11.9514C10.2347 12.1263 10.3888 12.2806 10.5637 12.2458L11.5975 12.0398C11.7723 12.005 11.9264 12.1591 11.8915 12.334L11.6379 13.6036C11.6215 13.6856 11.6472 13.7703 11.7063 13.8294L11.8474 13.9705C11.9239 14.047 12.0231 14.0966 12.1302 14.1119L13.1202 14.2533C13.7802 14.3476 14.3458 13.7819 14.2516 13.122L14.1101 12.132C14.0948 12.0249 14.0452 11.9257 13.9687 11.8492L9.68294 7.5634ZM5.5 7C6.32843 7 7 6.32843 7 5.5C7 4.67157 6.32843 4 5.5 4C4.67157 4 4 4.67157 4 5.5C4 6.32843 4.67157 7 5.5 7Z" fill="#383736"></path>
+</symbol></svg>
+  </div>
+  <header class="container__header"></header>
+  <main class="container__main">
+    <h1 class="visually-hidden">НМАРКЕТ - тестоввое задание</h1>
+    <section class="flat">
+      <button class="flat__close js-close-button" type="button" aria-label="Закрыть информацию о квартире" title="Закрыть информацию о квартире"></button>
+      <div class="properties">
+        <div class="properties__container">
+          <h2 class="properties__title">2-к квартира</h2>
+          <ul class="properties__list">
+            <li class="properties__item properties__item--floor">
+              <div class="properties__type">Этаж</div>
+              <div class="properties__info">3 из 19</div>
+            </li>
+            <li class="properties__item  properties__item--floor-height">
+              <div class="properties__type">Высота потолков</div>
+              <div class="properties__info">3,2 м</div>
+            </li>
+            <li class="properties__item properties__item--facing">
+              <div class="properties__type">Отделка</div>
+              <div class="properties__info">Предчистовая</div>
+            </li>
+            <li class="properties__item properties__item--total-square">
+              <div class="properties__type">Общая площадь</div>
+              <div class="properties__info">32,24 м²</div>
+            </li>
+            <li class="properties__item properties__item--living-square">
+              <div class="properties__type">Жилая площадь</div>
+              <div class="properties__info">22,24 м²</div>
+            </li>
+            <li class="properties__item properties__item--kitchen-square">
+              <div class="properties__type">Площадь кухни</div>
+              <div class="properties__info">14,24 м²</div>
+            </li>
+          </ul>
+          <ul class="properties__details">
+            <li class="properties__details-item properties__details-item--shown properties__details-item--plus">
+              <svg class="properties__icon" width="16" height="16">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+              <div>Вы были на просмотре</div>
+            </li>
+            <li class="properties__details-item properties__details-item--bank properties__details-item--minus">
+              <svg class="properties__icon" width="16" height="16">
+                <use xlink:href="#icon-cross"></use>
+              </svg>
+              <div>Дом аккредитован другим банком</div>
+            </li>
+          </ul>
+        </div>
+        <div class="properties__image-wrap">
+          <picture>
+            <source type="image/webp" srcset="./img/pictures/plan@1x.webp, ./img/pictures/plan@2x.png 2x">
+            <img class="properties__image" alt="План квартиры" src="./img/pictures/plan@1x.png" srcset="./img/pictures/plan@2x.png 2x" width="178" height="178">
+          </picture>
+        </div>
+
+      </div>
+      <div class="price">
+        <div class="price__duration">
+          Ваша цена по брони до&nbsp;
+          <span class="price__date">19 сентября</span>
+        </div>
+        <div class="price__value">3 312 666 Р</div>
+        <div class="price__comparison">Текущая цена у застройщика дороже на&nbsp; <span class="price__expensive">324 825 Р</span></div>
+        <a href="#" class="price__choose" title="Выбрать">
+          <svg class="price__key-icon" width="16" height="16">
+            <use xlink:href="#icon-key"></use>
+          </svg>
+          <div>Выбрать для покупки</div>
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer class="container__footer"></footer>
+  <script src="./js/script.js"></script>
+</body>
+</html>

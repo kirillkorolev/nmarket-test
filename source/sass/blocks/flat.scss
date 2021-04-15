@@ -1,0 +1,118 @@
+.flat {
+  max-width: 1200px;
+  width: 100%;
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  background-color: $white;
+  padding: 2.1% 2.4% 0.8% 2%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.flat__close {
+  @include reset-button;
+
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 16px;
+  right: 12px;
+  transition: background-color 0.4s ease-out 0.1s;
+  border-radius: 4px;
+
+  &::after,
+  &::before {
+    position: absolute;
+    content: "";
+    height: 2.1px;
+    width: 18.93px;
+    background-color: $charcoal;
+    top: 12px;
+    transition: background-color 0.4s ease-out 0.1s;
+  }
+
+  &::before {
+    transform: rotate(-45deg);
+    left: 5px;
+  }
+
+  &::after {
+    transform: rotate(45deg);
+    right: 4px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $pale-grey;
+  }
+
+  &:hover::before,
+  &:focus::before,
+  &:hover::after,
+  &:focus::after {
+    background-color: $black;
+  }
+
+  &:active {
+    background-color: $light-charcoal;
+  }
+}
+
+@media (max-width: 1279px) {
+  .flat {
+    width: 93.91%;
+    padding-right: 3.4%;
+    padding-top: 2.8%;
+    padding-left: 2.5%;
+    padding-bottom: 2.4%;
+  }
+}
+
+@media (max-width: 919px) {
+  .flat {
+    align-items: flex-start;
+    flex-direction: column;
+    width: 93%;
+
+    padding: 3.4% 4% 3% 3%;
+  }
+
+  .flat__close {
+    right: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .flat {
+    top: 40px;
+    transform: translate(-50%, 0);
+  }
+}
+
+@media (max-width: 767px) {
+  .flat {
+    width: 100%;
+    padding-left: 6%;
+    padding-top: 5.4%;
+    padding-right: 6%;
+    padding-bottom: 6%;
+
+    position: relative;
+    margin: 40px 0;
+    left: auto;
+    top: auto;
+    transform: none;
+  }
+
+  .flat__close {
+    right: 14px;
+  }
+}
